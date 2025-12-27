@@ -51,3 +51,14 @@ export interface JobApplication {
   resume_url: string;
   cover_letter?: string;
 }
+
+export interface Package {
+  id: string;
+  title: string;
+  description: string;
+  badge?: string;
+  discount_percentage: number;
+  included_items: string[];
+  display_order: number;
+  is_active: boolean;
+}
