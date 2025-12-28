@@ -1,10 +1,14 @@
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ThreeDScene from './ThreeDScene';
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 transition-colors duration-300 relative overflow-hidden">
+      <div className="absolute inset-0 hidden lg:block">
+        <ThreeDScene />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="space-y-8">
           <div className="animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-6 animate-float">
@@ -32,7 +36,7 @@ export default function Hero() {
               className="group px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl transform hover:scale-105 transition-all relative overflow-hidden"
             >
               <span className="relative z-10">محاسبه قیمت پروژه</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-teal-500 via-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-l from-teal-500 via-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
             </Link>
             <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}

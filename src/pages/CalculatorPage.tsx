@@ -245,8 +245,8 @@ export default function CalculatorPage() {
 
                     <div className={`w-8 h-8 mx-auto rounded-full border-2 flex items-center justify-center transition-all ${
                       isSelected
-                        ? 'border-purple-500 bg-purple-500'
-                        : 'border-gray-300 dark:border-gray-600 group-hover:border-purple-400'
+                        ? 'border-teal-500 bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500'
+                        : 'border-gray-300 dark:border-gray-600 group-hover:border-blue-400'
                     }`}>
                       {isSelected && <Check size={20} className="text-white" />}
                     </div>
@@ -318,7 +318,7 @@ export default function CalculatorPage() {
 
           <div className="lg:col-span-1">
             <div className="sticky top-24 animate-slide-up">
-              <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-teal-600 rounded-3xl p-8 text-white shadow-2xl">
+              <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-teal-500 rounded-3xl p-8 text-white shadow-2xl">
                 <div className="flex items-center gap-3 mb-8">
                   <CalcIcon size={32} />
                   <h3 className="text-2xl font-bold">خلاصه سفارش</h3>
@@ -401,7 +401,7 @@ export default function CalculatorPage() {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="w-full bg-white text-purple-600 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center justify-center gap-2 disabled:opacity-50 shadow-xl"
+                      className="w-full bg-white text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-teal-500 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center justify-center gap-2 disabled:opacity-50 shadow-xl"
                     >
                       {submitting ? (
                         <>
