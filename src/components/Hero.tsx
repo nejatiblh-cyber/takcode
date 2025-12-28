@@ -21,7 +21,7 @@ export default function Hero() {
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white leading-tight animate-slide-up">
             ایده‌های شما را به
-            <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-teal-500 bg-clip-text text-transparent animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            <span className="block bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent animate-slide-up" style={{ animationDelay: '0.1s' }}>
               واقعیت تبدیل می‌کنیم
             </span>
           </h1>
@@ -33,10 +33,10 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <Link
               to="/calculator"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl transform hover:scale-105 transition-all relative overflow-hidden"
+              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl transform hover:scale-105 transition-all relative overflow-hidden"
             >
               <span className="relative z-10">محاسبه قیمت پروژه</span>
-              <div className="absolute inset-0 bg-gradient-to-l from-teal-500 via-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-l from-teal-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
             </Link>
             <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
@@ -52,11 +52,11 @@ export default function Hero() {
               <div className="text-sm text-gray-600 dark:text-gray-400">پروژه موفق</div>
             </div>
             <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl">
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">۵۰+</div>
+              <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-1">۵۰+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">مشتری راضی</div>
             </div>
             <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl">
-              <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-1">۱۵+</div>
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">۱۵+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">تیم متخصص</div>
             </div>
             <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl">

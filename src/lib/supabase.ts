@@ -43,6 +43,7 @@ export interface PriceEstimate {
 }
 
 export interface JobApplication {
+  id: string;
   full_name: string;
   email: string;
   phone: string;
@@ -50,6 +51,7 @@ export interface JobApplication {
   experience_years: number;
   resume_url: string;
   cover_letter?: string;
+  created_at: string;
 }
 
 export interface Package {

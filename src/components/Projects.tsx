@@ -69,7 +69,7 @@ export default function Projects() {
               onClick={() => setFilter(cat)}
               className={`px-6 py-2 rounded-full font-medium transition-all hover:scale-105 ${
                 filter === cat
-                  ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-teal-500 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-blue-600 to-teal-500 text-white shadow-lg'
                   : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600'
               }`}
             >

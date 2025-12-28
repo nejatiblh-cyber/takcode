@@ -156,7 +156,7 @@ export default function CalculatorPage() {
               <CalcIcon size={40} className="text-white" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent animate-slide-up">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent animate-slide-up">
             محاسبه تخمینی هزینه
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 animate-slide-up">
@@ -179,7 +179,7 @@ export default function CalculatorPage() {
         {packages.length > 0 && (
           <div className="mb-12 animate-slide-up">
             <div className="flex items-center gap-3 mb-6">
-              <PackageIcon className="text-purple-600 dark:text-purple-400" size={28} />
+              <PackageIcon className="text-teal-600 dark:text-teal-400" size={28} />
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white">پکیج‌های پیشنهادی</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -197,8 +197,8 @@ export default function CalculatorPage() {
                     style={{ animationDelay: `${index * 0.1}s` }}
                     className={`group relative p-8 rounded-3xl border-3 transition-all duration-300 text-right animate-scale-in ${
                       isSelected
-                        ? 'border-purple-500 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/30 dark:to-blue-900/30 shadow-2xl scale-105'
-                        : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-purple-300 dark:hover:border-purple-600 hover:shadow-xl hover:scale-105'
+                        ? 'border-teal-500 bg-gradient-to-br from-teal-50 to-blue-50 dark:from-teal-900/30 dark:to-blue-900/30 shadow-2xl scale-105'
+                        : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-teal-300 dark:hover:border-teal-600 hover:shadow-xl hover:scale-105'
                     }`}
                   >
                     {pkg.badge && (
@@ -232,7 +232,7 @@ export default function CalculatorPage() {
                             {formatPrice(pkgPrice)}
                           </span>
                         )}
-                        <span className="text-3xl font-bold text-purple-600 dark:text-purple-400">
+                        <span className="text-3xl font-bold text-teal-600 dark:text-teal-400">
                           {formatPrice(discountedPrice)}
                         </span>
                         <span className="text-sm text-gray-500 dark:text-gray-400">تومان</span>
@@ -245,7 +245,7 @@ export default function CalculatorPage() {
 
                     <div className={`w-8 h-8 mx-auto rounded-full border-2 flex items-center justify-center transition-all ${
                       isSelected
-                        ? 'border-teal-500 bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500'
+                        ? 'border-teal-500 bg-gradient-to-r from-blue-500 to-teal-500'
                         : 'border-gray-300 dark:border-gray-600 group-hover:border-blue-400'
                     }`}>
                       {isSelected && <Check size={20} className="text-white" />}
@@ -318,7 +318,7 @@ export default function CalculatorPage() {
 
           <div className="lg:col-span-1">
             <div className="sticky top-24 animate-slide-up">
-              <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-teal-500 rounded-3xl p-8 text-white shadow-2xl">
+              <div className="bg-gradient-to-br from-blue-600 to-teal-500 rounded-3xl p-8 text-white shadow-2xl">
                 <div className="flex items-center gap-3 mb-8">
                   <CalcIcon size={32} />
                   <h3 className="text-2xl font-bold">خلاصه سفارش</h3>
@@ -359,7 +359,7 @@ export default function CalculatorPage() {
                 {selectedItems.size > 0 && !showForm && (
                   <button
                     onClick={() => setShowForm(true)}
-                    className="w-full bg-white text-purple-600 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl"
+                    className="w-full bg-white text-teal-600 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl"
                   >
                     ثبت درخواست
                   </button>
@@ -401,11 +401,11 @@ export default function CalculatorPage() {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="w-full bg-white text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-teal-500 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center justify-center gap-2 disabled:opacity-50 shadow-xl"
+                      className="w-full bg-white text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center justify-center gap-2 disabled:opacity-50 shadow-xl"
                     >
                       {submitting ? (
                         <>
-                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-purple-600" />
+                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-teal-600" />
                           در حال ارسال...
                         </>
                       ) : (
